@@ -6,6 +6,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './task-c.component.html',
   styleUrls: ['./task-c.component.css']
 })
+
 export class TaskCComponent implements OnInit {
 
   constructor() { }
@@ -14,6 +15,6 @@ export class TaskCComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    console.log(form);
+    console.log(form.value);
   }
 }
