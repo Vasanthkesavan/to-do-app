@@ -1,31 +1,22 @@
-<h1 class="text-center">Enter A Task</h1>
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-sm-offset-2">
+      <h1 class="text-center">Enter A Task</h1>
       <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <div id="user-data">
           <div class="form-group">
-            <label for="task">Task</label>
             <input
             type="text"
             id="task"
-            class="form-control"
+            class="form-control center_div"
             ngModel
             name="task"
             >
           </div>
-          <div class="form-group">
-            <label for="detail">Detail</label>
-            <input
-            type="text"
-            id="detail"
-            class="form-control"
-            ngModel
-            name="detail"
-            >
-          </div>
         </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
+        <div class="text-center">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
       </form>
     </div>
   </div>
